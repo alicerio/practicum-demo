@@ -33,9 +33,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fas fa-dragon"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Team 2</div>
             </a>
 
             <!-- Divider -->
@@ -57,7 +57,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="flight-plan.html" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fas fa-map-marked-alt"></i>
@@ -308,7 +308,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -347,19 +347,21 @@
 
                     <!-- Content Row -->
                     <div class="row">
+                        <div class="col-2">
+                            <label for="fname">Flight Plan Name:</label>
+                            <input type="text" id="fname" name="fname"> 
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-primary" onclick="downloadPoints()">
+                                Download Fly Path
+                            </button>
+                        </div>
 
-                        <button onclick="downloadPoints()">
-                            Download Fly Path
-                        </button>
-                        <label for="fname">Flight Plan Name:</label>
-                        <input type="text" id="fname" name="fname">
-
+                    </div>
+                    <div class="row">
                         <div id="map">
                         </div>
 
-                        <!-- <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY0B3_Fr1vRpgJDdbvNmrVyXmoOOtiq64&libraries=visualization&libraries=drawing&callback=initMap%22%3E" defer>
-                            </script> -->
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
                     </div>
 
                 </div>
@@ -372,7 +374,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy;Team 2</span>
                     </div>
                 </div>
             </footer>
